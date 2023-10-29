@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,30 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.put{
+  border: 2px solid black;
+  border-radius: 0;
+}
+
+.list:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  
+}
+
+.fslide {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCU8BRANlLM1iMNoyesfPbhCnCnE26bvyNg&usqp=CAU');
+  height: 60vh;
+  background-size: cover;
+}
+.sslide {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCU8BRANlLM1iMNoyesfPbhCnCnE26bvyNg&usqp=CAU');
+  height: 60vh;
+  background-size: cover;
 }

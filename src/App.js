@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import FirstSlide from "./components/FirstSlide";
+import SecondSlide from "./components/SecondSlide";
+import { motion } from "framer-motion";
+import ThirdSlide from "./components/ThirdSlide";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Products from "./components/Products"
+import Footer from './components/Footer';
+import Partners from './components/Partners';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <motion.div className="">
+      <Navbar />
+      <Nav />
+      <Home />
+      <Products />
+      <Partners />
+      <Footer />
+      <h1 className='font-bold text-white'>Hello world!</h1>
+    </motion.div>
   );
 }
 
