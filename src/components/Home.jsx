@@ -9,11 +9,13 @@ function Home() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 10000,  // Set the speed to 10 seconds (10000 milliseconds)
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,  // Enable autoplay
+    autoplaySpeed: 10000,  // Set autoplay speed to 10 seconds (10000 milliseconds)
   };
-
+  
   return (
     <div className="h-[75vh] w-full">
       <Slider {...settings}>
